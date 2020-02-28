@@ -1,0 +1,28 @@
+Vlad Andrei-Alexandru - 311 CB
+
+
+								=== Tema1 MN ===
+
+
+	Aceasta tema calculeaza pagerank-ul unor pagini web (numere) prin 2 metode:
+- Iterative
+- Algebraic
+
+	Pentru realizarea acestui lucru am creat un fisier principal PageRank.m in
+care apelez functiile Iterative si Algebraic. Aceste 2 functii intorc vectorul
+de Pagerank (fiecare).
+	Algoritmul Iterative deschide graful si citeste datele din el, le introduce
+intr-o matrice A (matricea de adiacenta) prin forma unor legaturi (notate cu 1),
+se construieste matricea K (matricea cu numarul de legaturi) si matrice M folosind
+o functie de calculare a inversei lui K (Inversa). Se calculeaza R(t) si R(t + 1)
+folosind formulele date, pana cand un epsilon dat este mai mic decat norma
+diferentei R(t + 1) si R(t).
+	Algoritmul Algebraic contine aceleasi instructiuni pana la calcularea vectorilor
+de PageRank (matricile A, K si M se calculeaza la fel ca la Iterative).
+	Tot in fisierul PageRank.m, dupa calculul celor doi vectori prin metode diferite
+calculez apartenenta si aflu coeficientii a si b, apoi aplic formula data.
+	Functia inversa calculeaza inversa unei matrici folosind algoritmul Gram-Schmidt
+(care descompune o matrice in Q si R) si rezolva sistemul superior triangulat de 
+la laborator cu ajutorul functiei SST.
+
+Pe masina locala obtin 100 de puncte pentru graf1 si 100 de puncte pentru graf2.
